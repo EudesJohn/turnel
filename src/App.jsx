@@ -101,34 +101,34 @@ function StatCard({ val, label }) {
 
 // Real testimonials from screenshots
 const TESTIMONIALS_REAL = [
-  { name:"Walï¿½", country:"Bï¿½nin", flag:"????", screenshot: img3 },
-  { name:"Youssouf Mc You Bouraima", country:"Bï¿½nin", flag:"????", screenshot: img4 },
-  { name:"Fabrice Allaye", country:"Bï¿½nin", flag:"????", screenshot: img5 },
-  { name:"Konan William K.", country:"Cï¿½te d'Ivoire", flag:"????", screenshot: img6 },
+  { name:"Walé", country:"Bénin", flag:"🇧🇯", screenshot: img3 },
+  { name:"Youssouf Mc You Bouraima", country:"Bénin", flag:"🇧🇯", screenshot: img4 },
+  { name:"Fabrice Allaye", country:"Bénin", flag:"🇧🇯", screenshot: img5 },
+  { name:"Konan William K.", country:"Côte d'Ivoire", flag:"🇨🇮", screenshot: img6 },
 ];
 
 // Generated testimonials
 const TESTIMONIALS_GEN = [
-  { name:"Aminata K.", country:"Cï¿½te d'Ivoire", flag:"????", avatar:"A", color:"#FF4D00", stars:5, text:"J'avais 120 abonnï¿½s depuis 2 ans. En appliquant juste le module 3 du guide, j'ai atteint 4 200 abonnï¿½s en 6 semaines. Je vends maintenant mes bijoux en ligne.", result:"0 ? 4 200 abonnï¿½s en 6 semaines ??" },
-  { name:"Moussa D.", country:"Sï¿½nï¿½gal", flag:"????", avatar:"M", color:"#FFB800", stars:5, text:"J'avais essayï¿½ des dizaines d'astuces sur YouTube sans rï¿½sultat. Ce guide m'a donnï¿½ une vraie stratï¿½gie. Mon compte TikTok a explosï¿½ en 30 jours.", result:"0 ? 8 500 abonnï¿½s en 30 jours ??" },
-  { name:"Fatima B.", country:"Maroc", flag:"????", avatar:"F", color:"#FF4D00", stars:5, text:"Grï¿½ce au module sur la monï¿½tisation, j'ai commencï¿½ ï¿½ vendre mes formations en ligne avec seulement 800 abonnï¿½s. Incroyable ce que ce guide m'a apportï¿½.", result:"Premiers revenus dï¿½s 800 abonnï¿½s ??" },
-  { name:"Nadia O.", country:"Cameroun", flag:"????", avatar:"N", color:"#FFB800", stars:5, text:"Je recommande ce guide ï¿½ tous les entrepreneurs. La section sur les vidï¿½os virales m'a transformï¿½e en crï¿½atrice de contenu professionnelle.", result:"3 collaborations payantes obtenues ?" },
-  { name:"Ibrahim S.", country:"Guinï¿½e", flag:"????", avatar:"I", color:"#FF4D00", stars:5, text:"Franchement j'ï¿½tais sceptique. Mais les stratï¿½gies sont tellement concrï¿½tes et adaptï¿½es ï¿½ l'Afrique que ï¿½a m'a convaincu dï¿½s le module 1.", result:"De 0 ï¿½ 5 200 abonnï¿½s en 3 mois ??" },
-  { name:"Kofi A.", country:"Ghana", flag:"????", avatar:"K", color:"#FFB800", stars:5, text:"The algorithms module alone was worth 10x the price. I went from posting into the void to getting consistent reach and engagement on every single post.", result:"0 ? 12 000 followers in 8 weeks ??" },
+  { name:"Aminata K.", country:"Côte d'Ivoire", flag:"🇨🇮", avatar:"A", color:"#FF4D00", stars:5, text:"J'avais 120 abonnés depuis 2 ans. En appliquant juste le module 3 du guide, j'ai atteint 4 200 abonnés en 6 semaines. Je vends maintenant mes bijoux en ligne.", result:"0 → 4 200 abonnés en 6 semaines 🚀" },
+  { name:"Moussa D.", country:"Sénégal", flag:"🇸🇳", avatar:"M", color:"#FFB800", stars:5, text:"J'avais essayé des dizaines d'astuces sur YouTube sans résultat. Ce guide m'a donné une vraie stratégie. Mon compte TikTok a explosé en 30 jours.", result:"0 → 8 500 abonnés en 30 jours 🔥" },
+  { name:"Fatima B.", country:"Maroc", flag:"🇲🇦", avatar:"F", color:"#FF4D00", stars:5, text:"Grâce au module sur la monétisation, j'ai commencé à vendre mes formations en ligne avec seulement 800 abonnés. Incroyable ce que ce guide m'a apporté.", result:"Premiers revenus dès 800 abonnés 💰" },
+  { name:"Nadia O.", country:"Cameroun", flag:"🇨🇲", avatar:"N", color:"#FFB800", stars:5, text:"Je recommande ce guide à tous les entrepreneurs. La section sur les vidéos virales m'a transformée en créatrice de contenu professionnelle.", result:"3 collaborations payantes obtenues ✅" },
+  { name:"Ibrahim S.", country:"Guinée", flag:"🇬🇳", avatar:"I", color:"#FF4D00", stars:5, text:"Franchement j'étais sceptique. Mais les stratégies sont tellement concrètes et adaptées à l'Afrique que ça m'a convaincu dès le module 1.", result:"De 0 à 5 200 abonnés en 3 mois 📈" },
+  { name:"Kofi A.", country:"Ghana", flag:"🇬🇭", avatar:"K", color:"#FFB800", stars:5, text:"The algorithms module alone was worth 10x the price. I went from posting into the void to getting consistent reach and engagement on every single post.", result:"0 → 12 000 followers in 8 weeks 🎯" },
 ];
 
 export default function App() {
   const [tab, setTab] = useState(0);
 
   const modules = [
-    { icon:"??", title:"Choisir la bonne plateforme", desc:"Instagram, TikTok, YouTube, Facebook, Pinterest ï¿½ on t'explique LAQUELLE cibler selon ton business et ton audience." },
-    { icon:"?", title:"Maï¿½triser les algorithmes", desc:"Comprends exactement comment chaque algorithme fonctionne et tourne-le ï¿½ ton avantage pour une portï¿½e maximale." },
-    { icon:"??", title:"Contenu viral", desc:"La formule exacte pour crï¿½er des posts qui explosent : hooks, visuels, timing, hashtags ï¿½ tout est rï¿½vï¿½lï¿½." },
-    { icon:"??", title:"Communautï¿½ engagï¿½e", desc:"Transforme tes abonnï¿½s en fans fidï¿½les qui achï¿½tent, recommandent et dï¿½fendent tes produits." },
-    { icon:"??", title:"Monï¿½tiser dï¿½s 500 abonnï¿½s", desc:"3 mï¿½thodes concrï¿½tes pour gï¿½nï¿½rer de l'argent MAINTENANT sans attendre 10 000 abonnï¿½s." },
-    { icon:"??", title:"Automatiser ta croissance", desc:"Planification, rï¿½ponses automatiques, analyses ï¿½ gagne du temps et passe ta croissance en pilote automatique." },
-    { icon:"??", title:"Analyser tes performances", desc:"Lis tes statistiques, comprends ce qui fonctionne et optimise ta stratï¿½gie chaque semaine." },
-    { icon:"??", title:"Vidï¿½os virales prï¿½tes ï¿½ l'emploi", desc:"Scripts, templates et idï¿½es testï¿½es et approuvï¿½es pour exploser en vues immï¿½diatement." },
+    { icon:"🎯", title:"Choisir la bonne plateforme", desc:"Instagram, TikTok, YouTube, Facebook, Pinterest — on t'explique LAQUELLE cibler selon ton business et ton audience." },
+    { icon:"⚡", title:"Maîtriser les algorithmes", desc:"Comprends exactement comment chaque algorithme fonctionne et tourne-le à ton avantage pour une portée maximale." },
+    { icon:"🔥", title:"Contenu viral", desc:"La formule exacte pour créer des posts qui explosent : hooks, visuels, timing, hashtags — tout est révélé." },
+    { icon:"🤝", title:"Communauté engagée", desc:"Transforme tes abonnés en fans fidèles qui achètent, recommandent et défendent tes produits." },
+    { icon:"💰", title:"Monétiser dès 500 abonnés", desc:"3 méthodes concrètes pour générer de l'argent MAINTENANT sans attendre 10 000 abonnés." },
+    { icon:"🤖", title:"Automatiser ta croissance", desc:"Planification, réponses automatiques, analyses — gagne du temps et passe ta croissance en pilote automatique." },
+    { icon:"📊", title:"Analyser tes performances", desc:"Lis tes statistiques, comprends ce qui fonctionne et optimise ta stratégie chaque semaine." },
+    { icon:"🎬", title:"Vidéos virales prêtes à l'emploi", desc:"Scripts, templates et idées testées et approuvées pour exploser en vues immédiatement." },
   ];
 
   return (
@@ -147,33 +147,33 @@ export default function App() {
 
       <div style={{ fontFamily:"'Outfit',sans-serif", background:"#080808", color:"#fff", minHeight:"100vh", overflowX:"hidden" }}>
 
-        {/* -- URGENCY BAR -- */}
+        {/* ── URGENCY BAR ── */}
         <div style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800,#FF4D00)", backgroundSize:"200% auto", animation:"shimmer 3s linear infinite", padding:"9px 16px", textAlign:"center", display:"flex", flexWrap:"wrap", justifyContent:"center", alignItems:"center", gap:12 }}>
-          <span style={{ fontSize:13, fontWeight:800, color:"#000" }}>? OFFRE LIMITï¿½E ï¿½ Expire dans :</span>
+          <span style={{ fontSize:13, fontWeight:800, color:"#000" }}>⏰ OFFRE LIMITÉE — Expire dans :</span>
           <CountdownTimer />
         </div>
 
-        {/* -- HERO -- */}
+        {/* ── HERO ── */}
         <section style={{ maxWidth:880, margin:"0 auto", padding:"56px 20px 40px", textAlign:"center" }}>
 
           <Reveal>
             <div style={{ display:"inline-flex", alignItems:"center", gap:8, background:"rgba(255,77,0,0.12)", border:"1px solid rgba(255,77,0,0.4)", borderRadius:100, padding:"8px 20px", marginBottom:24 }}>
-              <span style={{ fontSize:15 }}>??</span>
-              <span style={{ color:"#FF4D00", fontWeight:700, fontSize:12, letterSpacing:1.5, textTransform:"uppercase" }}>Guide Complet ï¿½ ï¿½dition 2026</span>
+              <span style={{ fontSize:15 }}>🔥</span>
+              <span style={{ color:"#FF4D00", fontWeight:700, fontSize:12, letterSpacing:1.5, textTransform:"uppercase" }}>Guide Complet · Édition 2026</span>
             </div>
           </Reveal>
 
           <Reveal delay={0.1}>
             <h1 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(46px,9vw,92px)", lineHeight:0.95, letterSpacing:2, marginBottom:20 }}>
-              <span style={{ color:"#fff" }}>Rï¿½SEAUX SOCIAUX :</span><br/>
-              <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>DE Zï¿½RO ï¿½ 10 000</span><br/>
-              <span style={{ color:"#fff" }}>ABONNï¿½S</span>
+              <span style={{ color:"#fff" }}>RÉSEAUX SOCIAUX :</span><br/>
+              <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>DE ZÉRO À 10 000</span><br/>
+              <span style={{ color:"#fff" }}>ABONNÉS</span>
             </h1>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p style={{ fontSize:"clamp(15px,2.4vw,19px)", color:"#aaa", maxWidth:600, margin:"0 auto 32px", lineHeight:1.65 }}>
-              La mï¿½thode <strong style={{ color:"#fff" }}>ï¿½tape par ï¿½tape</strong> pour dï¿½velopper ta communautï¿½,<br/>attirer des clients et <strong style={{ color:"#FFB800" }}>gï¿½nï¿½rer des revenus rï¿½els</strong> sur les rï¿½seaux sociaux.
+              La méthode <strong style={{ color:"#fff" }}>étape par étape</strong> pour développer ta communauté,<br/>attirer des clients et <strong style={{ color:"#FFB800" }}>générer des revenus réels</strong> sur les réseaux sociaux.
             </p>
           </Reveal>
 
@@ -181,7 +181,7 @@ export default function App() {
           <Reveal delay={0.25}>
             <div style={{ position:"relative", display:"inline-block", margin:"0 auto 36px", animation:"float 4.5s ease-in-out infinite" }}>
               <div style={{ position:"absolute", inset:-24, background:"radial-gradient(ellipse,rgba(255,77,0,0.28),transparent 68%)", animation:"glow 2.5s ease-in-out infinite" }}/>
-              <img src={img7} alt="Rï¿½seaux Sociaux De Zï¿½ro ï¿½ 10 000 Abonnï¿½s"
+              <img src={img7} alt="Réseaux Sociaux De Zéro à 10 000 Abonnés"
                 style={{ width:"min(300px,80vw)", borderRadius:20, boxShadow:"0 28px 80px rgba(255,77,0,0.42), 0 0 0 1px rgba(255,77,0,0.18)", position:"relative", zIndex:1 }}/>
               {/* Prix badge */}
               <div style={{ position:"absolute", top:-12, right:-12, background:"linear-gradient(135deg,#FF4D00,#FFB800)", borderRadius:"50%", width:86, height:86, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", zIndex:2, boxShadow:"0 8px 26px rgba(255,77,0,0.55)" }}>
@@ -195,10 +195,10 @@ export default function App() {
           {/* Stats */}
           <Reveal delay={0.35}>
             <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:12, marginBottom:36 }}>
-              <StatCard val="200+" label="Entrepreneurs formï¿½s"/>
+              <StatCard val="200+" label="Entrepreneurs formés"/>
               <StatCard val="8" label="Modules complets"/>
-              <StatCard val="8" label="Accï¿½s ï¿½ vie"/>
-              <StatCard val="100%" label="Satisfait ou remboursï¿½"/>
+              <StatCard val="∞" label="Accès à vie"/>
+              <StatCard val="100%" label="Satisfait ou remboursé"/>
             </div>
           </Reveal>
 
@@ -206,11 +206,11 @@ export default function App() {
           <Reveal delay={0.4}>
             <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:12 }}>
               <CTAButton href={PAYMENT_LINK} big>
-                ?? COMMANDER MAINTENANT ï¿½ 5 750 FCFA / ~8,70ï¿½
+                🚀 COMMANDER MAINTENANT — 5 750 FCFA / ~8,70€
               </CTAButton>
-              <WAButton>?? POSER UNE QUESTION SUR WHATSAPP</WAButton>
+              <WAButton>💬 POSER UNE QUESTION SUR WHATSAPP</WAButton>
               <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:16, marginTop:6 }}>
-                {["?? Paiement sï¿½curisï¿½","? Accï¿½s immï¿½diat","??? Remboursï¿½ sous 7j","?? Orange Money ï¿½ Wave ï¿½ Visa"].map(t=>(
+                {["🔒 Paiement sécurisé","⚡ Accès immédiat","🛡️ Remboursé sous 7j","📲 Orange Money · Wave · Visa"].map(t=>(
                   <span key={t} style={{ fontSize:12, color:"#555" }}>{t}</span>
                 ))}
               </div>
@@ -218,22 +218,22 @@ export default function App() {
           </Reveal>
         </section>
 
-        {/* -- PROOF ï¿½ TIKTOK STATS -- */}
+        {/* ── PROOF — TIKTOK STATS ── */}
         <section style={{ background:"linear-gradient(135deg,#0d0d0d,#110800)", borderTop:"1px solid #1e1e1e", borderBottom:"1px solid #1e1e1e", padding:"64px 20px" }}>
           <div style={{ maxWidth:860, margin:"0 auto" }}>
             <Reveal>
               <div style={{ textAlign:"center", marginBottom:40 }}>
-                <p style={{ color:"#FF4D00", fontWeight:700, letterSpacing:3, textTransform:"uppercase", fontSize:12, marginBottom:10 }}>ï¿½ La preuve par les chiffres ï¿½</p>
+                <p style={{ color:"#FF4D00", fontWeight:700, letterSpacing:3, textTransform:"uppercase", fontSize:12, marginBottom:10 }}>— La preuve par les chiffres —</p>
                 <h2 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(30px,5vw,54px)", letterSpacing:1 }}>
-                  LES <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Rï¿½SULTATS Rï¿½ELS</span> PARLENT
+                  LES <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>RÉSULTATS RÉELS</span> PARLENT
                 </h2>
-                <p style={{ color:"#777", fontSize:14, marginTop:10 }}>Statistiques TikTok officielles ï¿½ vï¿½rifiables</p>
+                <p style={{ color:"#777", fontSize:14, marginTop:10 }}>Statistiques TikTok officielles — vérifiables</p>
               </div>
             </Reveal>
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))", gap:20 }}>
               {[
-                { img:img1, stats:[["3,2M","Vues"],["76K","Likes"],["7 172","Nouveaux abonnï¿½s"],["163 $","Revenus estimï¿½s"]] },
-                { img:img2, stats:[["4,4M","Vues"],["137K","Likes"],["5 498","Nouveaux abonnï¿½s"],["525 $","Revenus estimï¿½s"]] },
+                { img:img1, stats:[["3,2M","Vues"],["76K","Likes"],["7 172","Nouveaux abonnés"],["163 $","Revenus estimés"]] },
+                { img:img2, stats:[["4,4M","Vues"],["137K","Likes"],["5 498","Nouveaux abonnés"],["525 $","Revenus estimés"]] },
               ].map((item,i)=>(
                 <Reveal key={i} delay={i*0.15}>
                   <div style={{ background:"linear-gradient(135deg,#111,#1a1a1a)", border:"1px solid rgba(255,77,0,0.2)", borderRadius:20, overflow:"hidden" }}>
@@ -253,15 +253,15 @@ export default function App() {
             <Reveal delay={0.3}>
               <div style={{ marginTop:28, background:"rgba(255,77,0,0.08)", border:"1px solid rgba(255,77,0,0.25)", borderRadius:16, padding:"20px 24px", textAlign:"center" }}>
                 <p style={{ fontSize:16, color:"#fff", fontWeight:700, lineHeight:1.6 }}>
-                  Ces rï¿½sultats viennent de la <span style={{ color:"#FF4D00" }}>mï¿½me mï¿½thode</span> que tu trouveras dans ce guide. <br/>
-                  <span style={{ color:"#FFB800" }}>Des millions de vues. Des milliers d'abonnï¿½s. Des revenus rï¿½els. ??</span>
+                  Ces résultats viennent de la <span style={{ color:"#FF4D00" }}>même méthode</span> que tu trouveras dans ce guide. <br/>
+                  <span style={{ color:"#FFB800" }}>Des millions de vues. Des milliers d'abonnés. Des revenus réels. 🔥</span>
                 </p>
               </div>
             </Reveal>
           </div>
         </section>
 
-        {/* -- PAIN SECTION -- */}
+        {/* ── PAIN SECTION ── */}
         <section style={{ background:"linear-gradient(135deg,#0f0000,#1a0800)", borderBottom:"1px solid #2a1500", padding:"64px 20px" }}>
           <div style={{ maxWidth:780, margin:"0 auto" }}>
             <Reveal>
@@ -271,12 +271,12 @@ export default function App() {
             </Reveal>
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(270px,1fr))", gap:14 }}>
               {[
-                ["??","Tu postes chaque jour mais ton compte stagne ï¿½ quelques dizaines d'abonnï¿½sï¿½"],
-                ["??","Tu vois des gens avec moins de talent que toi exploser sur TikTok et Instagramï¿½"],
-                ["??","Tu as essayï¿½ des astuces YouTube mais rien de concret n'a changï¿½"],
-                ["??","Tu ne sais pas quel contenu crï¿½er, ni ï¿½ quelle heure publier pour toucher ton audienceï¿½"],
-                ["??","Tu ignores comment l'algorithme fonctionne et tu publies dans le videï¿½"],
-                ["??","Tu crois qu'il faut 100K abonnï¿½s pour commencer ï¿½ gagner de l'argentï¿½"],
+                ["😤","Tu postes chaque jour mais ton compte stagne à quelques dizaines d'abonnés…"],
+                ["😫","Tu vois des gens avec moins de talent que toi exploser sur TikTok et Instagram…"],
+                ["💸","Tu as essayé des astuces YouTube mais rien de concret n'a changé…"],
+                ["😰","Tu ne sais pas quel contenu créer, ni à quelle heure publier pour toucher ton audience…"],
+                ["🤷","Tu ignores comment l'algorithme fonctionne et tu publies dans le vide…"],
+                ["😤","Tu crois qu'il faut 100K abonnés pour commencer à gagner de l'argent…"],
               ].map(([icon,text],i)=>(
                 <Reveal key={i} delay={i*0.07}>
                   <div style={{ background:"rgba(255,77,0,0.06)", border:"1px solid rgba(255,77,0,0.15)", borderRadius:14, padding:"18px 18px", display:"flex", gap:14, alignItems:"flex-start" }}>
@@ -289,19 +289,19 @@ export default function App() {
             <Reveal delay={0.45}>
               <div style={{ marginTop:32, background:"rgba(255,77,0,0.1)", border:"2px solid #FF4D00", borderRadius:16, padding:"24px", textAlign:"center" }}>
                 <p style={{ fontSize:"clamp(15px,2.4vw,19px)", color:"#fff", fontWeight:700, lineHeight:1.55 }}>
-                  Si tu as dit <span style={{ color:"#FF4D00" }}>"oui"</span> ï¿½ au moins 2 pointsï¿½ <br/>
-                  <span style={{ color:"#FFB800" }}>ce guide a ï¿½tï¿½ crï¿½ï¿½ EXACTEMENT pour toi ??</span>
+                  Si tu as dit <span style={{ color:"#FF4D00" }}>"oui"</span> à au moins 2 points… <br/>
+                  <span style={{ color:"#FFB800" }}>ce guide a été créé EXACTEMENT pour toi 👇</span>
                 </p>
               </div>
             </Reveal>
           </div>
         </section>
 
-        {/* -- MODULES -- */}
+        {/* ── MODULES ── */}
         <section style={{ maxWidth:880, margin:"0 auto", padding:"70px 20px" }}>
           <Reveal>
             <div style={{ textAlign:"center", marginBottom:44 }}>
-              <p style={{ color:"#FF4D00", fontWeight:700, letterSpacing:3, textTransform:"uppercase", fontSize:12, marginBottom:10 }}>ï¿½ Ce que tu vas maï¿½triser ï¿½</p>
+              <p style={{ color:"#FF4D00", fontWeight:700, letterSpacing:3, textTransform:"uppercase", fontSize:12, marginBottom:10 }}>— Ce que tu vas maîtriser —</p>
               <h2 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(30px,5vw,54px)", letterSpacing:1 }}>
                 8 MODULES <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>COMPLETS</span>
               </h2>
@@ -319,18 +319,18 @@ export default function App() {
             <div style={{ display:"flex", alignItems:"flex-start", gap:18 }}>
               <span style={{ fontSize:44, flexShrink:0 }}>{modules[tab].icon}</span>
               <div>
-                <h3 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:26, color:"#FF4D00", letterSpacing:1, marginBottom:8 }}>Module {tab+1} ï¿½ {modules[tab].title}</h3>
+                <h3 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:26, color:"#FF4D00", letterSpacing:1, marginBottom:8 }}>Module {tab+1} — {modules[tab].title}</h3>
                 <p style={{ color:"#ccc", fontSize:15, lineHeight:1.7 }}>{modules[tab].desc}</p>
               </div>
             </div>
           </div>
           <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))", gap:12, marginTop:28 }}>
             {[
-              ["??","Vidï¿½os virales prï¿½tes ï¿½ l'emploi","Scripts + templates testï¿½s et approuvï¿½s"],
-              ["??","Compatible tous tï¿½lï¿½phones","Accessible directement depuis ton mobile"],
-              ["??","Mises ï¿½ jour incluses","Le guide ï¿½volue avec les algorithmes"],
-              ["??","Accï¿½s ï¿½ vie","Une fois achetï¿½, c'est pour toujours"],
-              ["???","Satisfait ou remboursï¿½ 7j","Zï¿½ro risque. Si tu n'es pas satisfait, remboursï¿½."],
+              ["🎬","Vidéos virales prêtes à l'emploi","Scripts + templates testés et approuvés"],
+              ["📲","Compatible tous téléphones","Accessible directement depuis ton mobile"],
+              ["🔄","Mises à jour incluses","Le guide évolue avec les algorithmes"],
+              ["♾️","Accès à vie","Une fois acheté, c'est pour toujours"],
+              ["🛡️","Satisfait ou remboursé 7j","Zéro risque. Si tu n'es pas satisfait, remboursé."],
             ].map(([icon,title,sub],i)=>(
               <Reveal key={i} delay={i*0.06}>
                 <div style={{ background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.07)", borderRadius:14, padding:"16px 18px", display:"flex", gap:12, alignItems:"center" }}>
@@ -345,21 +345,21 @@ export default function App() {
           </div>
         </section>
 
-        {/* -- TESTIMONIALS -- */}
+        {/* ── TESTIMONIALS ── */}
         <section style={{ background:"#0a0a0a", borderTop:"1px solid #1a1a1a", borderBottom:"1px solid #1a1a1a", padding:"70px 20px" }}>
           <div style={{ maxWidth:920, margin:"0 auto" }}>
             <Reveal>
               <div style={{ textAlign:"center", marginBottom:44 }}>
-                <p style={{ color:"#FFB800", fontWeight:700, letterSpacing:3, textTransform:"uppercase", fontSize:12, marginBottom:10 }}>ï¿½ Avis clients rï¿½els ï¿½</p>
+                <p style={{ color:"#FFB800", fontWeight:700, letterSpacing:3, textTransform:"uppercase", fontSize:12, marginBottom:10 }}>— Avis clients réels —</p>
                 <h2 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(30px,5vw,54px)", letterSpacing:1 }}>
-                  ILS <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>ONT ACHETï¿½</span> ET ILS EN PARLENT
+                  ILS <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>ONT ACHETÉ</span> ET ILS EN PARLENT
                 </h2>
               </div>
             </Reveal>
 
-            {/* Screenshots rï¿½els */}
+            {/* Screenshots réels */}
             <Reveal delay={0.05}>
-              <p style={{ color:"#FF4D00", fontWeight:700, fontSize:12, letterSpacing:2, textTransform:"uppercase", marginBottom:18, paddingLeft:4 }}>?? Captures d'ï¿½cran authentiques</p>
+              <p style={{ color:"#FF4D00", fontWeight:700, fontSize:12, letterSpacing:2, textTransform:"uppercase", marginBottom:18, paddingLeft:4 }}>📸 Captures d'écran authentiques</p>
             </Reveal>
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(260px,1fr))", gap:18, marginBottom:48 }}>
               {TESTIMONIALS_REAL.map((t,i)=>(
@@ -378,7 +378,7 @@ export default function App() {
                         <div style={{ fontSize:11, color:"#666" }}>{t.flag} {t.country}</div>
                       </div>
                       <div style={{ marginLeft:"auto", background:"rgba(255,77,0,0.12)", border:"1px solid rgba(255,77,0,0.3)", borderRadius:8, padding:"5px 10px", fontSize:11, color:"#FF4D00", fontWeight:700, whiteSpace:"nowrap" }}>
-                        ? Vï¿½rifiï¿½
+                        ✓ Vérifié
                       </div>
                     </div>
                   </div>
@@ -386,9 +386,9 @@ export default function App() {
               ))}
             </div>
 
-            {/* Tï¿½moignages gï¿½nï¿½rï¿½s */}
+            {/* Témoignages générés */}
             <Reveal delay={0.05}>
-              <p style={{ color:"#FFB800", fontWeight:700, fontSize:12, letterSpacing:2, textTransform:"uppercase", marginBottom:18, paddingLeft:4 }}>?? Tï¿½moignages de notre communautï¿½</p>
+              <p style={{ color:"#FFB800", fontWeight:700, fontSize:12, letterSpacing:2, textTransform:"uppercase", marginBottom:18, paddingLeft:4 }}>💬 Témoignages de notre communauté</p>
             </Reveal>
             <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))", gap:18 }}>
               {TESTIMONIALS_GEN.map((t,i)=>(
@@ -398,12 +398,12 @@ export default function App() {
                     {/* Stars */}
                     <div style={{ display:"flex", gap:2, marginBottom:14 }}>
                       {Array(t.stars).fill(0).map((_,s)=>(
-                        <span key={s} style={{ fontSize:14, color:"#FFB800" }}>?</span>
+                        <span key={s} style={{ fontSize:14, color:"#FFB800" }}>⭐</span>
                       ))}
                     </div>
                     <p style={{ color:"#ccc", fontSize:14, lineHeight:1.65, marginBottom:16, fontStyle:"italic" }}>"{t.text}"</p>
                     <div style={{ background:"rgba(255,77,0,0.1)", border:"1px solid rgba(255,77,0,0.25)", borderRadius:8, padding:"8px 12px", marginBottom:16 }}>
-                      <span style={{ color:"#FF4D00", fontWeight:800, fontSize:13 }}>?? {t.result}</span>
+                      <span style={{ color:"#FF4D00", fontWeight:800, fontSize:13 }}>🚀 {t.result}</span>
                     </div>
                     <div style={{ display:"flex", alignItems:"center", gap:10 }}>
                       <div style={{ width:38, height:38, borderRadius:"50%", background:`linear-gradient(135deg,${t.color},#FFB800)`, display:"flex", alignItems:"center", justifyContent:"center", fontWeight:900, fontSize:15, color:"#000", flexShrink:0 }}>
@@ -422,7 +422,7 @@ export default function App() {
             <Reveal delay={0.4}>
               <div style={{ marginTop:36, textAlign:"center" }}>
                 <div style={{ display:"inline-flex", alignItems:"center", gap:8, background:"rgba(255,184,0,0.1)", border:"1px solid rgba(255,184,0,0.3)", borderRadius:100, padding:"10px 24px" }}>
-                  <span style={{ fontSize:18 }}>?????</span>
+                  <span style={{ fontSize:18 }}>⭐⭐⭐⭐⭐</span>
                   <span style={{ color:"#FFB800", fontWeight:700, fontSize:14 }}>100% des avis sont positifs</span>
                 </div>
               </div>
@@ -430,24 +430,24 @@ export default function App() {
           </div>
         </section>
 
-        {/* -- PRICE BLOCK -- */}
+        {/* ── PRICE BLOCK ── */}
         <section style={{ maxWidth:720, margin:"0 auto", padding:"70px 20px" }}>
           <Reveal>
             <h2 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(28px,5vw,52px)", textAlign:"center", letterSpacing:1, marginBottom:36 }}>
-              COMBIEN ï¿½A VAUT <span style={{ color:"#FFB800" }}>VRAIMENT ?</span>
+              COMBIEN ÇA VAUT <span style={{ color:"#FFB800" }}>VRAIMENT ?</span>
             </h2>
           </Reveal>
           <div style={{ background:"linear-gradient(135deg,#111,#181818)", border:"1px solid #252525", borderRadius:20, padding:"28px 24px", marginBottom:22 }}>
             {[
-              ["Mï¿½thode complï¿½te 8 modules","30 000 FCFA"],
-              ["Vidï¿½os virales prï¿½tes ï¿½ l'emploi","15 000 FCFA"],
-              ["Stratï¿½gie monï¿½tisation","20 000 FCFA"],
+              ["Méthode complète 8 modules","30 000 FCFA"],
+              ["Vidéos virales prêtes à l'emploi","15 000 FCFA"],
+              ["Stratégie monétisation","20 000 FCFA"],
               ["Templates & scripts","10 000 FCFA"],
-              ["Mises ï¿½ jour ï¿½ vie","25 000 FCFA"],
+              ["Mises à jour à vie","25 000 FCFA"],
             ].map(([lab,val],i)=>(
               <div key={i} style={{ display:"flex", justifyContent:"space-between", alignItems:"center", padding:"13px 0", borderBottom: i<4 ? "1px solid #1e1e1e":"none" }}>
                 <div style={{ display:"flex", gap:10, alignItems:"center" }}>
-                  <span style={{ color:"#FF4D00", fontWeight:900 }}>?</span>
+                  <span style={{ color:"#FF4D00", fontWeight:900 }}>✓</span>
                   <span style={{ color:"#ccc", fontSize:14 }}>{lab}</span>
                 </div>
                 <span style={{ color:"#555", textDecoration:"line-through", fontSize:13 }}>{val}</span>
@@ -463,29 +463,29 @@ export default function App() {
             <div style={{ background:"linear-gradient(135deg,rgba(255,77,0,0.13),rgba(255,184,0,0.08))", border:"2px solid #FF4D00", borderRadius:20, padding:"36px 28px", textAlign:"center" }}>
               <p style={{ color:"#aaa", fontSize:14, marginBottom:6 }}>Prix aujourd'hui seulement</p>
               <div style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(60px,11vw,96px)", background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", lineHeight:1 }}>5 750 FCFA</div>
-              <div style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(28px,5vw,44px)", color:"#FFB800", marginTop:4 }}>ï¿½ 8,70 ï¿½</div>
-              <p style={{ color:"#666", fontSize:13, marginTop:6 }}>Au lieu de 15 000 FCFA ï¿½ Tu ï¿½conomises 9 250 FCFA</p>
+              <div style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(28px,5vw,44px)", color:"#FFB800", marginTop:4 }}>≈ 8,70 €</div>
+              <p style={{ color:"#666", fontSize:13, marginTop:6 }}>Au lieu de 15 000 FCFA — Tu économises 9 250 FCFA</p>
               <div style={{ marginTop:24, display:"flex", flexDirection:"column", alignItems:"center", gap:12 }}>
-                <CTAButton href={PAYMENT_LINK} big>? JE PRENDS MA COPIE ï¿½ 5 750 FCFA / 8,70ï¿½</CTAButton>
-                <WAButton>?? DES QUESTIONS ? ï¿½CRIS-NOUS SUR WHATSAPP</WAButton>
+                <CTAButton href={PAYMENT_LINK} big>⚡ JE PRENDS MA COPIE — 5 750 FCFA / 8,70€</CTAButton>
+                <WAButton>💬 DES QUESTIONS ? ÉCRIS-NOUS SUR WHATSAPP</WAButton>
               </div>
             </div>
           </Reveal>
         </section>
 
-        {/* -- GUARANTEE -- */}
+        {/* ── GUARANTEE ── */}
         <section style={{ background:"#0a0a0a", borderTop:"1px solid #1a1a1a", padding:"56px 20px" }}>
           <div style={{ maxWidth:620, margin:"0 auto", textAlign:"center" }}>
             <Reveal>
-              <div style={{ fontSize:68, marginBottom:14 }}>???</div>
+              <div style={{ fontSize:68, marginBottom:14 }}>🛡️</div>
               <h2 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(28px,5vw,50px)", letterSpacing:1, marginBottom:14 }}>
-                GARANTIE <span style={{ color:"#FF4D00" }}>SATISFAIT OU REMBOURSï¿½</span> 7 JOURS
+                GARANTIE <span style={{ color:"#FF4D00" }}>SATISFAIT OU REMBOURSÉ</span> 7 JOURS
               </h2>
               <p style={{ color:"#999", fontSize:15, lineHeight:1.7, marginBottom:22 }}>
-                On est tellement confiants que cette mï¿½thode va transformer ta prï¿½sence en ligne qu'on te donne <strong style={{ color:"#fff" }}>7 jours pour tout tester.</strong> Si tu n'es pas satisfait, tu es remboursï¿½ ï¿½ 100%. Aucune question posï¿½e.
+                On est tellement confiants que cette méthode va transformer ta présence en ligne qu'on te donne <strong style={{ color:"#fff" }}>7 jours pour tout tester.</strong> Si tu n'es pas satisfait, tu es remboursé à 100%. Aucune question posée.
               </p>
               <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:10 }}>
-                {["?? Paiement sï¿½curisï¿½","? Accï¿½s immï¿½diat","?? Accï¿½s ï¿½ vie","?? Mises ï¿½ jour incluses"].map(t=>(
+                {["🔒 Paiement sécurisé","⚡ Accès immédiat","♾️ Accès à vie","🔄 Mises à jour incluses"].map(t=>(
                   <div key={t} style={{ background:"rgba(255,255,255,0.04)", border:"1px solid rgba(255,255,255,0.09)", borderRadius:100, padding:"8px 16px", fontSize:12, color:"#aaa" }}>{t}</div>
                 ))}
               </div>
@@ -493,27 +493,27 @@ export default function App() {
           </div>
         </section>
 
-        {/* -- FINAL CTA -- */}
+        {/* ── FINAL CTA ── */}
         <section style={{ maxWidth:760, margin:"0 auto", padding:"70px 20px", textAlign:"center" }}>
           <Reveal>
             <div style={{ background:"linear-gradient(135deg,#111 0%,#1a0800 50%,#111 100%)", border:"1px solid rgba(255,77,0,0.28)", borderRadius:24, padding:"48px 28px" }}>
               <h2 style={{ fontFamily:"'Bebas Neue',cursive", fontSize:"clamp(30px,6vw,60px)", letterSpacing:1, marginBottom:10 }}>
-                TON SUCCï¿½S <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>COMMENCE AUJOURD'HUI</span>
+                TON SUCCÈS <span style={{ background:"linear-gradient(90deg,#FF4D00,#FFB800)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>COMMENCE AUJOURD'HUI</span>
               </h2>
               <p style={{ color:"#999", fontSize:15, marginBottom:28, lineHeight:1.65 }}>
-                Des centaines de personnes ont dï¿½jï¿½ transformï¿½ leur prï¿½sence en ligne.<br/>
+                Des centaines de personnes ont déjà transformé leur présence en ligne.<br/>
                 <strong style={{ color:"#fff" }}>C'est ton tour maintenant.</strong>
               </p>
               <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:14, marginBottom:24 }}>
-                <CTAButton href={PAYMENT_LINK} big>?? ACCï¿½DER MAINTENANT ï¿½ 5 750 FCFA / 8,70ï¿½</CTAButton>
-                <WAButton>?? CONTACTER VIA WHATSAPP</WAButton>
+                <CTAButton href={PAYMENT_LINK} big>🚀 ACCÉDER MAINTENANT — 5 750 FCFA / 8,70€</CTAButton>
+                <WAButton>💬 CONTACTER VIA WHATSAPP</WAButton>
                 <div style={{ display:"flex", alignItems:"center", gap:8, marginTop:4 }}>
-                  <span style={{ color:"#666", fontSize:13 }}>? Offre expire dans</span>
+                  <span style={{ color:"#666", fontSize:13 }}>⏰ Offre expire dans</span>
                   <CountdownTimer />
                 </div>
               </div>
               <div style={{ display:"flex", flexWrap:"wrap", justifyContent:"center", gap:18 }}>
-                {[["??","Sï¿½curisï¿½"],["?","Immï¿½diat"],["??","ï¿½ vie"],["???","Remboursï¿½ 7j"]].map(([icon,lab])=>(
+                {[["🔒","Sécurisé"],["⚡","Immédiat"],["♾️","À vie"],["🛡️","Remboursé 7j"]].map(([icon,lab])=>(
                   <div key={lab} style={{ display:"flex", alignItems:"center", gap:5 }}>
                     <span style={{ fontSize:16 }}>{icon}</span>
                     <span style={{ fontSize:12, color:"#666" }}>{lab}</span>
@@ -524,14 +524,13 @@ export default function App() {
           </Reveal>
         </section>
 
-        {/* -- FOOTER -- */}
+        {/* ── FOOTER ── */}
         <footer style={{ borderTop:"1px solid #161616", padding:"22px 20px", textAlign:"center" }}>
-          <p style={{ color:"#333", fontSize:11 }}>ï¿½ 2026 ï¿½ Rï¿½seaux Sociaux De Zï¿½ro ï¿½ 10 000 Abonnï¿½s ï¿½ Tous droits rï¿½servï¿½s</p>
-          <p style={{ color:"#2a2a2a", fontSize:10, marginTop:4 }}>Les rï¿½sultats varient selon l'application. Les tï¿½moignages prï¿½sentï¿½s sont des cas rï¿½els.</p>
+          <p style={{ color:"#333", fontSize:11 }}>© 2026 · Réseaux Sociaux De Zéro à 10 000 Abonnés · Tous droits réservés</p>
+          <p style={{ color:"#2a2a2a", fontSize:10, marginTop:4 }}>Les résultats varient selon l'application. Les témoignages présentés sont des cas réels.</p>
         </footer>
 
       </div>
     </>
   );
 }
-
