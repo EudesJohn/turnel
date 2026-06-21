@@ -8,7 +8,7 @@ const img5 = "/img5.jpg";;
 const img6 = "/img6.jpg";;
 const img7 = "/img7.jpg";;
 
-const PAYMENT_LINK = "https://fooocsof.mychariow.shop/superboost/checkout";
+const PAYMENT_LINK = "https://johnson-store.mymaketou.store/products/-10-000-videos-tiktok-pretes-comment-boost-tes-live-tiktok-et-compte-tik-tok-monetise-3/checkout";
 const WHATSAPP = "https://wa.me/22940571373";
 
 function useInView(threshold = 0.12) {
